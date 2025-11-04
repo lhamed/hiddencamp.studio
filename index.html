@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiddenCamp | Indie Game Studio</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #ddd;
+    }
+    section {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #ffcc00;
+      margin-bottom: 1rem;
+    }
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .game-card {
+      background: #1c1c1c;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .game-card:hover {
+      transform: translateY(-4px);
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HiddenCamp</h1>
+    <p>작지만 진심으로 게임을 만듭니다.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      HiddenCamp는 인디 개발자들이 모여 설립한 게임 스튜디오입니다.<br />
+      대표작 <strong>입구컷용사 (Entry-Cut Hero)</strong>를 비롯해<br />
+      새로운 방치형 RPG와 픽셀 아트 기반 게임을 제작하고 있습니다.
+    </p>
+  </section>
+
+  <section id="games">
+    <h2>Our Games</h2>
+    <div class="games">
+      <div class="game-card">
+        <h3>입구컷용사</h3>
+        <p>방치형 RPG의 새로운 시도,<br>던전 입구를 지켜라!</p>
+      </div>
+      <div class="game-card">
+        <h3>비밀 프로젝트 X</h3>
+        <p>현재 개발 중인 미공개 신작.<br>곧 공개됩니다!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:contact@hiddencamp.com">contact@hiddencamp.com</a><br>
+      📍 Seoul, Republic of Korea
+    </p>
+  </section>
+
+  <footer>
+    © 2025 HiddenCamp. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
